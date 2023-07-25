@@ -1,0 +1,15 @@
+version: v1
+
+name: buf.build/kirychuk/wasker-proto
+
+breaking:
+  use:
+    - FILE
+
+lint:
+  use:
+    - DEFAULT
+
+deps:
+  # adding well known types by google
+  - buf.build/googleapis/googleapis
