@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package common.v1;
+
+message Pagination {
+  bool next = 1;
+  uint64 current = 2;
+  uint64 page_size = 3;
+}
+
+message PaginationParam {
+  uint64 current = 2;
+  uint64 page_size = 3;
+}
